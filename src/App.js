@@ -22,7 +22,7 @@ export default function App() {
 
       if (item) {
         item.distance = (Number(item.distance) + Number(form.distance)).toString();
-        return prevData;
+        return [...prevData];
       } else {
         const newData = [...prevData, {
           id: form.id,
